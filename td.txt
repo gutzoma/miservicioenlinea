@@ -1,0 +1,6 @@
+light theme-color-blue
+light theme-color-gray
+light theme-color-gray
+light theme-color-gray
+light theme-color-gray
+dark

@@ -1,0 +1,6 @@
+/finanback/src/config/db.php
+node_modules
+vendor
+temp/
+cache/
+finan_db

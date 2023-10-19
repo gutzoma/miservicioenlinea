@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.link-custom {
+    color: var(--bs-primary)!important;
+}
+
+.nav-link.active {
+    color: var(--bs-white) !important;
+}
