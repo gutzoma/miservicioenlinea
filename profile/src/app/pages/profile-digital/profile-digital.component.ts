@@ -30,9 +30,19 @@ getGenerales(params: any) {
     response => {
       if(response != 'No existen'){
         this.generales = response[0];
+        $("body").attr('class', '');
+        $('body').addClass('landing-pages');
         $('body').addClass(this.generales.tema);
         $('.acerca-de').html(this.generales.acerca_de);
         $('.info').html(this.generales.info);
+        $(document).prop('title', this.generales.nombres + ' ' +  this.generales.paterno + ' - ' + this.generales.descripcion);
+        $('meta[property="og:image"]').attr('content', 'https://miservicioenlinea.com/assets/images/avatars/' + this.generales.img); 
+        setTimeout(() => {
+          $('.simple-loader').removeClass('loader');
+          $("html").scrollTop(0);
+        }, 1500);
+        
+        
       }else{
         window.location.href = "/#/home";
       }

@@ -1,9 +1,10 @@
 <!-- loader Start -->
-<!-- <div id="loading">
+<div id="loading">
       <div class="loader simple-loader">
           <div class="loader-body">
           </div>
-      </div>    </div> -->
+      </div>    </div>
+      
 <!-- loader END -->
 
 <aside class=" ">
@@ -83,7 +84,7 @@
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between">
                                         <div class="header-title">
-                                            <h4 class="card-title">Servicios</h4>
+                                            <h4 class="card-title text-title-card">Servicios</h4>
                                         </div>
                                     </div>
                                     <div class="card-body info">
@@ -95,7 +96,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="header-title">
-                                            <h4 class="card-title">Perfil</h4>
+                                            <h4 class="card-title text-title-card">Perfil</h4>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -116,7 +117,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="header-title">
-                                            <h4 class="card-title">Acerca de</h4>
+                                            <h4 class="card-title text-title-card">Acerca de</h4>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -148,7 +149,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="header-title">
-                                    <h4 class="card-title">Contactame</h4>
+                                    <h4 class="card-title text-title-card">Contactame</h4>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -163,7 +164,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="header-title">
-                                    <h4 class="card-title">Mis Redes</h4>
+                                    <h4 class="card-title text-title-card">Mis Redes</h4>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -172,8 +173,8 @@
                                         <li class="d-flex mb-4 align-items-center">
                                             <img src="../../assets/images/brands/{{red.red}}.png" alt="story-img"
                                                 class="rounded-pill avatar-70 p-1 profile-story-img border bg-soft-light img-fluid">
-                                            <div class="ms-3">
-                                                <h5>{{red.red}}</h5>
+                                            <div class="ms-3 ">
+                                                <h5 class="text-redes">{{red.red}}</h5>
                                             </div>
                                         </li>
                                     </a>
@@ -185,7 +186,7 @@
                         <div class="card">
                             <div class="card-header d-flex align-items-center justify-content-between">
                                 <div class="header-title">
-                                    <h4 class="card-title">Galeria</h4>
+                                    <h4 class="card-title text-title-card">Galeria</h4>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -220,7 +221,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="header-title">
-                                    <h4 class="card-title">Como llegar</h4>
+                                    <h4 class="card-title text-title-card">Como llegar</h4>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -235,26 +236,47 @@
                 </div>
             </div>
             <!-- Footer Section Start -->
-            <footer class="footer">
-                <div class="footer-body">
-                    <ul class="left-panel list-inline mb-0 p-0">
-                        <li class="list-inline-item">Te gustaria tener tu tarjeta digital</li>
-                        <li class="list-inline-item">Contactame: <a href="https://wa.me/5584791928">5584791928</a></li>
-                    </ul>
-                    <div class="right-panel">
-                        ©
-                        Hope UI, Made with
-                        <span class="">
-                            <svg class="icon-15" width="15" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15.85 2.50065C16.481 2.50065 17.111 2.58965 17.71 2.79065C21.401 3.99065 22.731 8.04065 21.62 11.5806C20.99 13.3896 19.96 15.0406 18.611 16.3896C16.68 18.2596 14.561 19.9196 12.28 21.3496L12.03 21.5006L11.77 21.3396C9.48102 19.9196 7.35002 18.2596 5.40102 16.3796C4.06102 15.0306 3.03002 13.3896 2.39002 11.5806C1.26002 8.04065 2.59002 3.99065 6.32102 2.76965C6.61102 2.66965 6.91002 2.59965 7.21002 2.56065H7.33002C7.61102 2.51965 7.89002 2.50065 8.17002 2.50065H8.28002C8.91002 2.51965 9.52002 2.62965 10.111 2.83065H10.17C10.21 2.84965 10.24 2.87065 10.26 2.88965C10.481 2.96065 10.69 3.04065 10.89 3.15065L11.27 3.32065C11.3618 3.36962 11.4649 3.44445 11.554 3.50912C11.6104 3.55009 11.6612 3.58699 11.7 3.61065C11.7163 3.62028 11.7329 3.62996 11.7496 3.63972C11.8354 3.68977 11.9247 3.74191 12 3.79965C13.111 2.95065 14.46 2.49065 15.85 2.50065ZM18.51 9.70065C18.92 9.68965 19.27 9.36065 19.3 8.93965V8.82065C19.33 7.41965 18.481 6.15065 17.19 5.66065C16.78 5.51965 16.33 5.74065 16.18 6.16065C16.04 6.58065 16.26 7.04065 16.68 7.18965C17.321 7.42965 17.75 8.06065 17.75 8.75965V8.79065C17.731 9.01965 17.8 9.24065 17.94 9.41065C18.08 9.58065 18.29 9.67965 18.51 9.70065Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </span> by <a>IQONIC Design</a>.
+            <div class=" row justify-content-center ">
+                <footer class="col-lg-10">
+                    <div class="container-fluid">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 col-xs-8">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">Te gustaria tener tu tarjeta digital</li>
+                                            <li class="list-inline-item">Contactame: <a href="https://wa.me/5584791928"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22"
+                                                        viewBox="0 0 48 48">
+                                                        <path fill="#fff"
+                                                            d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                                                        </path>
+                                                        <path fill="#fff"
+                                                            d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                                                        </path>
+                                                        <path fill="#cfd8dc"
+                                                            d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                                                        </path>
+                                                        <path fill="#40c351"
+                                                            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                                                        </path>
+                                                        <path fill="#fff" fill-rule="evenodd"
+                                                            d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>5584791928</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-4 text-right">
+                                        <img src="../../../assets/images/logo.jpeg" alt="" class="logo-footer">
+                                        <span class="mr-1">
+                                        </span> <a href="/#/home" class="">miservicioenlinea.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
             <!-- Footer Section End -->
         </div>
     </main>
