@@ -18,3 +18,15 @@
 .logo-footer {
     width: 25px;
 }
+.img-center{
+    text-align: center;
+}
+.qr-size{
+    max-width: 332px;
+}
+
+@media (min-width: 525px) {
+.compartir{
+display: none !important;
+}
+  }

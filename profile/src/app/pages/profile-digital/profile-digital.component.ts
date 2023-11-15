@@ -15,6 +15,7 @@ export class ProfileDigitalComponent {
 
   public generales!: any;
   public redes!: any;
+  public link!: any;
 
   constructor(private _router:ActivatedRoute, private _profileservice: ProfileService) { }
 
@@ -23,6 +24,10 @@ this._router.params.subscribe(params => {
   this.getGenerales(params['id']);
   this.getRedes(params['id']);
 });
+
+$(".compartir").click(() => {
+this.compartir();
+  });
 }
 
 getGenerales(params: any) {
@@ -36,7 +41,8 @@ getGenerales(params: any) {
         $('.acerca-de').html(this.generales.acerca_de);
         $('.info').html(this.generales.info);
         $(document).prop('title', this.generales.nombres + ' ' +  this.generales.paterno + ' - ' + this.generales.descripcion);
-        $('meta[property="og:image"]').attr('content', 'https://miservicioenlinea.com/assets/images/avatars/' + this.generales.img); 
+        $('meta[property="og:image"]').attr('content', 'https://miservicioenlinea.com/assets/images/avatars/' + this.generales.img);
+        this.link = this.generales.url;
         setTimeout(() => {
           $('.simple-loader').removeClass('loader');
           $("html").scrollTop(0);
@@ -63,5 +69,19 @@ getRedes(params: any) {
       console.log(<any>error);
     }
   );
+}
+
+compartir() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'Mi tarjeta digital',
+      text: 'Conoce mis servicios',
+      url: 'https://miservicioenlinea.com/#/perfil/'+this.link
+    })
+    .then(() => console.log('Contenido compartido'))
+    .catch((error) => console.log('Error al compartir', error));
+  } else {
+    alert('La funcionalidad de compartir no está soportada en este navegador.');
+  }
 }
 }
